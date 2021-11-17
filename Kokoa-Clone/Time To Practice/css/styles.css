@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.palylist-header {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; */
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.palylist-header i {
+  position: absolute;
+  left: 10px;
+  font-size: 30px;
+}
+
+.playlist-name {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.playlist-name__title--column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.playlist-name__title {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: coral;
+}
+.playlist-name span {
+  margin: 5px 10px;
+}
+.playlist-name span:first-child {
+  font-size: 30px;
+  font-weight: 600;
+}
+.playlist-name span:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+}
+.playlist-name span:last-child {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+form button:first-child {
+  width: 150px;
+  height: 50px;
+  margin: 50px 10px;
+  border-radius: 10px;
+  border-width: 0.5ex;
+}
+form button:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  margin: 50px 20px;
+  border-radius: 50%;
+  border-width: 0.5ex;
+}
+form button:last-child {
+  width: 50px;
+  height: 50px;
+  margin: 50px 20px;
+  border-radius: 50%;
+  border-width: 0.5ex;
+}
+ul {
+  padding: 0;
+  margin: 0px 10px;
+}
+
+.playlist-song__box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.playlist-song__box:first-child {
+  background-color: #ff6347;
+}
+.playlist-song__box:nth-child(2) {
+  background-color: blueviolet;
+}
+.playlist-song__box:nth-child(3) {
+  background-color: blueviolet;
+}
+.playlist-song__box:last-child {
+  background-color: blueviolet;
+}
+.playlist-song__title:first-child {
+  margin-left: 60px;
+}
+li {
+  list-style: none;
+  line-height: 1;
+  font-size: 12px;
+}
+.playlist-song__title span {
+  display: block;
+  display: flex;
+
+  align-items: center;
+  width: 150px;
+  height: 20px;
+}
+.playlist-song__title span:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.playlist-song__title span:last-child {
+  opacity: 0.6;
+}

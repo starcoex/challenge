@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: yellowgreen;
+}
+@keyframes dotAnimation {
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+@keyframes lineAni {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+}
+.dots {
+  display: flex;
+  width: 200px;
+  margin-bottom: 200px;
+  justify-content: space-around;
+  animation: dotAnimation 1s ease-in-out infinite;
+}
+.dot {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.lines {
+  width: 150px;
+}
+.line {
+  width: 20px;
+  height: 80px;
+  background-color: white;
+  animation: lineAni 1s ease-in-out infinite;
+}
+.line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.line:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.line:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.line:nth-child(5) {
+  animation-delay: 0.4s;
+}
